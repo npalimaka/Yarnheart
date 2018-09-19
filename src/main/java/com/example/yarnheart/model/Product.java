@@ -1,5 +1,7 @@
 package com.example.yarnheart.model;
 
+import lombok.Data;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,6 +9,7 @@ import javax.persistence.Id;
 import java.math.BigInteger;
 
 @Entity
+@Data
 public class Product {
 
     @Id
