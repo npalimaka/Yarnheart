@@ -634,11 +634,11 @@
           <!-- /.col-lg-3-->
           <div class="col-lg-3 col-md-6">
             <h4 class="mb-3">Get the news</h4>
-            <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            <form>
+            <p class="text-muted">Stay updated with all the new products, promotions and blog posts!</p>
+            <form action="#" th:action="@{/subscribe}" th:object="${subscribers}" method="post">
               <div class="input-group">
-                <input type="text" class="form-control"><span class="input-group-append">
-                  <button type="button" class="btn btn-outline-secondary">Subscribe!</button></span>
+                <input type="text" th:field="*{email}" class="form-control"><span class="input-group-append">
+                  <button type="submit" class="btn btn-outline-secondary">Subscribe!</button></span>
               </div>
               <!-- /input-group-->
             </form>

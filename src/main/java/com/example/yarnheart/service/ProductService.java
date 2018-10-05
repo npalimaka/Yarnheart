@@ -6,4 +6,5 @@ public interface ProductService {
 
     Product findProductById(Long id);
     Product getProductByName(String name);
+    void save(Product product);
 }
